@@ -119,6 +119,34 @@ const updateUser = async (req, res) => {
 
 const deleteUser = async (req, res) => {
   try {
+    // Get user being deleted
+    const { data: user, error: userError } = await supabase
+      .from("users")
+      .select("*")
+      .eq("id", req.params.id)
+      .single();
+
+    if (userError) throw userError;
+
+    // If deleting an admin, check how many admins exist
+    if (user.role === "admin") {
+      const { data: admins, error: adminError } = await supabase
+        .from("users")
+        .select("id")
+        .eq("role", "admin");
+
+      if (adminError) throw adminError;
+
+      // Prevent deletion if this is the last admin
+      if (admins.length === 1) {
+        return res.status(403).json({
+          success: false,
+          message: "Cannot delete the last admin account",
+        });
+      }
+    }
+
+    // Delete user
     const { error } = await supabase
       .from("users")
       .delete()
@@ -127,10 +155,12 @@ const deleteUser = async (req, res) => {
     if (error) throw error;
 
     res.status(200).json({
+      success: true,
       message: "User deleted successfully",
     });
   } catch (error) {
     res.status(500).json({
+      success: false,
       error: error.message,
     });
   }
