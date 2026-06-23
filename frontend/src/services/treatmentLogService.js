@@ -1,20 +1,20 @@
 import API from "./api";
 
 export const getAllLogs = async () => {
-  const response = await API.get("/treatment-logs");
+  const response = await API.get("/treatmentlogs");
   return response.data;
 };
 
 export const getLogById = async (id) => {
   const response = await API.get(
-    `/treatment-logs/${id}`
+    `/treatmentlogs/${id}`
   );
   return response.data;
 };
 
 export const createLog = async (logData) => {
   const response = await API.post(
-    "/treatment-logs",
+    "/treatmentlogs",
     logData
   );
   return response.data;
@@ -25,7 +25,7 @@ export const updateLog = async (
   logData
 ) => {
   const response = await API.put(
-    `/treatment-logs/${id}`,
+    `/treatmentlogs/${id}`,
     logData
   );
   return response.data;
@@ -33,7 +33,7 @@ export const updateLog = async (
 
 export const deleteLog = async (id) => {
   const response = await API.delete(
-    `/treatment-logs/${id}`
+    `/treatmentlogs/${id}`
   );
   return response.data;
 };
