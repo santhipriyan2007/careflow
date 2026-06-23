@@ -1,8 +1,19 @@
 ## Live Demo
 
-### Frontend
+Project Name: CareFlow
+
+### Live Application
 
 https://careflow-green.vercel.app
+
+
+### Demo Credentials
+
+Admin Account
+
+Email: admin@careflow.com
+Password: Admin123@
+
 
 ### Backend API
 
