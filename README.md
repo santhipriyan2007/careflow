@@ -1,64 +1,130 @@
-# CareFlow
-
-CareFlow is a web-based Smart Appointment, Lead, and Patient Management System designed for small clinics and healthcare providers.
-
-## Project Overview
-
-Small clinics often rely on phone calls, WhatsApp messages, and paper registers to manage appointments, follow-ups, and payments. CareFlow digitizes these processes by providing a centralized platform for patient engagement and clinic operations.
-
-## Features
-
-### Lead Management
-- Capture consultation requests from website visitors
-- Track lead status
-- Convert leads into patients
-
-### Patient Management
-- Register patients
-- Maintain treatment history
-- Search and manage records
-
-### Appointment Scheduling
-- Book appointments
-- Manage recurring visits
-- Reschedule or cancel appointments
-
-### Reminder Automation
-- Send automated email reminders
-- Reduce missed appointments
-
-### Payment Tracking
-- Record payments
-- Monitor outstanding balances
-- View payment history
-
-### Dashboard Analytics
-- Lead conversion rates
-- Revenue overview
-- Upcoming appointments
-- Pending payments
-
-## Technology Stack
+## Live Demo
 
 ### Frontend
-- React.js (Vite)
-- Tailwind CSS
-- JavaScript
 
-### Backend
-- Node.js
-- Express.js
+https://careflow-green.vercel.app
 
-### Database
-- Supabase (PostgreSQL)
+### Backend API
 
-### Tools
-- Nodemailer
-- Node-cron
-- GitHub
-- Vercel
-- Google Analytics
+https://careflow-i56g.onrender.com
 
-## Status
+---
 
-Project currently under development.
+## System Architecture Diagram
+
+![CareFlow Architecture](docs/architecture/careflow-architecture.png)
+
+---
+
+## Application Screenshots
+
+### Landing Page
+
+![Landing Page](docs/screenshots/landing-page.png)
+
+### Login Page
+
+![Login Page](docs/screenshots/login-page.png)
+
+### Dashboard
+
+![Dashboard](docs/screenshots/dashboard.png)
+
+### Patients Management
+
+![Patients Page](docs/screenshots/patients-page.png)
+
+### Leads Management
+
+![Leads Page](docs/screenshots/leads-page.png)
+
+### Appointments Management
+
+![Appointments Page](docs/screenshots/appointments-page.png)
+
+### Treatments Management
+
+![Treatments Page](docs/screenshots/treatments-page.png)
+
+### Payments Management
+
+![Payments Page](docs/screenshots/payments-page.png)
+
+### Treatment Logs
+
+![Treatment Logs Page](docs/screenshots/treatmentlogs-page.png)
+
+### Reports & Analytics
+
+![Reports Page](docs/screenshots/reports-page.png)
+
+---
+
+## Project Structure
+
+```text
+careflow
+│
+├── frontend
+│   ├── src
+│   ├── public
+│   └── package.json
+│
+├── backend
+│   ├── src
+│   ├── routes
+│   ├── controllers
+│   ├── middleware
+│   └── package.json
+│
+├── docs
+│   ├── screenshots
+│   └── architecture
+│
+└── README.md
+```
+
+---
+
+## Installation & Setup
+
+### Clone Repository
+
+```bash
+git clone <repository-url>
+cd careflow
+```
+
+### Backend Setup
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+### Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+### Environment Variables
+
+Backend (.env)
+
+```env
+SUPABASE_URL=
+SUPABASE_ANON_KEY=
+JWT_SECRET=
+PORT=5000
+```
+
+Frontend (.env)
+
+```env
+VITE_API_URL=http://localhost:5000/api
+```
+
