@@ -21,12 +21,6 @@ https://careflow-i56g.onrender.com
 
 ---
 
-## System Architecture Diagram
-
-![CareFlow Architecture](docs/architecture/careflow-architecture.png)
-
----
-
 
 ## Project Structure
 
