@@ -27,49 +27,6 @@ https://careflow-i56g.onrender.com
 
 ---
 
-## Application Screenshots
-
-### Landing Page
-
-![Landing Page](docs/screenshots/landing-page.png)
-
-### Login Page
-
-![Login Page](docs/screenshots/login-page.png)
-
-### Dashboard
-
-![Dashboard](docs/screenshots/dashboard.png)
-
-### Patients Management
-
-![Patients Page](docs/screenshots/patients-page.png)
-
-### Leads Management
-
-![Leads Page](docs/screenshots/leads-page.png)
-
-### Appointments Management
-
-![Appointments Page](docs/screenshots/appointments-page.png)
-
-### Treatments Management
-
-![Treatments Page](docs/screenshots/treatments-page.png)
-
-### Payments Management
-
-![Payments Page](docs/screenshots/payments-page.png)
-
-### Treatment Logs
-
-![Treatment Logs Page](docs/screenshots/treatmentlogs-page.png)
-
-### Reports & Analytics
-
-![Reports Page](docs/screenshots/reports-page.png)
-
----
 
 ## Project Structure
 
