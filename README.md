@@ -6,19 +6,6 @@ Project Name: CareFlow
 
 https://careflow-green.vercel.app
 
-
-### Demo Credentials
-
-Admin Account
-
-Email: admin@careflow.com
-Password: Admin123@
-
-
-### Backend API
-
-https://careflow-i56g.onrender.com
-
 ---
 
 
@@ -83,6 +70,18 @@ SUPABASE_ANON_KEY=
 JWT_SECRET=
 PORT=5000
 ```
+
+### Demo Credentials
+
+Admin Account
+
+Email: admin@careflow.com
+Password: Admin123@
+
+
+### Backend API
+
+https://careflow-i56g.onrender.com
 
 Frontend (.env)
 
